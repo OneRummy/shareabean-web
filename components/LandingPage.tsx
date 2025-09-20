@@ -21,22 +21,22 @@ export function LandingPage() {
   const features = [
     {
       icon: <Users className="w-8 h-8" />,
-      title: '함께 사면 더 저렴하게',
-      description: '이웃들과 함께 대용량 제품을 나눠 구매하고 비용을 절약하세요',
+      title: '자취 공동구매로 절약',
+      description: '자취생활 필수템을 이웃과 함께 공동구매하고 생활비를 대폭 절약하세요',
       color: 'text-emerald-600',
       bgColor: 'bg-emerald-50',
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      title: '투명한 가격',
-      description: '모든 비용이 투명하게 공개되어 안전하고 신뢰할 수 있습니다',
+      title: '자취 살림관리 올인원',
+      description: '자취 유통기한 관리, 자취 집안일 체크리스트까지 한 번에',
       color: 'text-blue-600',
       bgColor: 'bg-blue-50',
     },
     {
       icon: <Clock className="w-8 h-8" />,
-      title: '편리한 수령',
-      description: '직접 수령부터 택배 배송까지 편리한 방법으로 받아보세요',
+      title: '자취생활 편의기능',
+      description: '자취방 근처 픽업부터 자취 살림 팁 공유까지 편리한 자취생활 지원',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50',
     },
@@ -45,18 +45,18 @@ export function LandingPage() {
   const steps = [
     {
       step: '01',
-      title: '나눔 찾기',
-      description: '원하는 제품의 공동구매를 찾거나 직접 개설하세요',
+      title: '자취 공동구매 찾기',
+      description: '자취생활 필수템 공동구매를 찾거나 직접 개설하세요',
     },
     {
       step: '02',
-      title: '함께하기',
-      description: '수량을 선택하고 이웃들과 함께 참여해보세요',
+      title: '자취 이웃과 함께하기',
+      description: '자취 커뮤니티에서 이웃들과 함께 공동구매 참여하세요',
     },
     {
       step: '03',
-      title: '나눠받기',
-      description: '직접 수령 또는 택배로 편리하게 나눠받아보세요',
+      title: '자취방으로 배송받기',
+      description: '자취방 근처 픽업 또는 직접 배송으로 편리하게 받아보세요',
     },
   ]
 
@@ -110,6 +110,8 @@ export function LandingPage() {
       <section
         data-section="0"
         className="relative overflow-hidden flex items-center justify-center min-h-screen pt-20"
+        itemScope
+        itemType="https://schema.org/SoftwareApplication"
         style={{
           backgroundImage: `
             linear-gradient(90deg, 
@@ -131,7 +133,7 @@ export function LandingPage() {
             <div className="relative space-y-8">
               <div className="space-y-4">
                 <Badge className="px-4 py-2" style={{ backgroundColor: '#84CB6F', color: 'white' }}>
-                  🎉 자취의 모든 순간, 콩한쪽에서
+                  🎉 자취생활 공동구매·살림관리 No.1
                 </Badge>
                 <div className="space-y-2">
                   <div className="text-3xl lg:text-4xl font-bold leading-tight">
@@ -141,16 +143,16 @@ export function LandingPage() {
                     <br />
                     <span style={{ color: '#468B4B' }}>올인원 플랫폼</span>
                   </div>
-                  <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+                  <h1 className="text-5xl lg:text-6xl font-bold leading-tight" itemProp="name">
                     <span style={{ color: '#84CB6F' }}>콩한쪽</span>
                   </h1>
                 </div>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  공동구매로 비용을 절감하고, 커뮤니티를 통해 소통하세요
+                <p className="text-xl text-gray-600 leading-relaxed" itemProp="description">
+                  자취생활 필수템을 공동구매로 저렴하게, 살림관리로 편리하게
                   <br />
-                  유통기한 관리, 집안일 관리, 살림 팁 등
+                  자취 유통기한 관리, 자취 집안일 관리, 자취 살림 팁까지
                   <br />
-                  자취 생활을 편리하고 즐겁게 만들어보세요!
+                  똑똑한 자취생활을 콩한쪽과 함께 시작하세요!
                 </p>
               </div>
 
@@ -219,10 +221,10 @@ export function LandingPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#468B4B' }}>
-              왜 콩한쪽을 선택해야 할까요?
+              자취생활 공동구매·살림관리 왜 콩한쪽일까요?
             </h2>
             <p className="text-xl text-gray-600">
-              콩 한 쪽도 나눠먹는 따뜻한 이웃들과 함께하는 스마트한 쇼핑
+              자취 필수템 공동구매부터 살림관리까지, 이웃과 함께하는 똑똑한 자취생활
             </p>
           </div>
 
